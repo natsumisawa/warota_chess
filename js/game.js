@@ -16,7 +16,8 @@ function initialize() {
   const config = {
     // チェスの駒を初期位置にする
     position: 'start',
+    draggable: true,
     pieceTheme: 'img/chesspieces/' + MODE + '/{piece}.png'
   };
-  ChessBoard('board', config);
+  new ChessBoard('board', config);
 }
