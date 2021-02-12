@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Chess</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/chessboard-1.0.0.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/chessboard-1.0.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.min.js"></script>
+  </head>
+  <body>
+    <div class="ly_header">
+      <h1>チェスだよ</h1>
+    </div>
+    <div class="ly_body">
+      <div class="toggle-switch-wrapper">
+        <img src="img/chesspieces/mono/wK.png" alt="" height="42px">
+        <div class="toggle-switch">
+          <input id="toggle" type='checkbox' onclick="changeMode()"/>
+          <label for="toggle"/>
+        </div>
+        <img src="img/chesspieces/color/wK.png" alt="" height="42px">
+      </div>
+      <div id="board" style="width: 400px"></div> 
+    </div>
+    <script src="js/game.js"></script>
+  </body>
+</html>
